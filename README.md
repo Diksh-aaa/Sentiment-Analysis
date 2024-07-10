@@ -27,6 +27,18 @@ BERT tokenizer uses something known as sub word-based tokenization. Sub word-tok
 - Attention mask – Attention Mask is used to avoid performing attention on padding token indices. Mask value can be either 0 or 1, 1 for tokens that are NOT MASKED, 0 for MASKED tokens.
 - Token type ids – It is used in use cases like sequence classification or question answering. As these require two different sequences to be encoded in the same input IDs. Special tokens, such as the classifier\[CLS\] and separator\[SEP\] tokens are used to separate the sequences.
 
+
+
+- we load the pretrained BERT tokenize with a cased vocabulary using BertTokenizer.from_pretrained(“bert-base-cased”).
+
+- tokenizer.encode(text) tokenizes the input text and converts it into a sequence of token IDs.
+
+- print(“Token IDs:”, encoding) prints the token IDs obtained after encoding.
+
+- tokenizer.convert_ids_to_tokens(encoding) converts the token IDs back to their corresponding tokens.
+
+- print(“Tokens:”, tokens) prints the tokens obtained after converting the token IDs
+
 # Training the BERT model for Sentiment Analysis
 
 Now we can fine-tuning process using the ‘Keras’ API ‘model.fit’.
