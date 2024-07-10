@@ -1,4 +1,3 @@
-Sentiment Analysis
 
 # What is Sentiment Analysis
 
@@ -30,5 +29,5 @@ BERT tokenizer uses something known as sub word-based tokenization. Sub word-tok
 
 # Training the BERT model for Sentiment Analysis
 
-Now we can start the fine-tuning process. We will use the ‘Keras’ API ‘model.fit’.
+Now we can fine-tuning process using the ‘Keras’ API ‘model.fit’.
 
